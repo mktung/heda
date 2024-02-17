@@ -1,0 +1,7 @@
+{
+    "dataJson": "data.json",
+    "schemaJson": "schema.json",
+    "scriptsRhai": "scripts.rhai",
+    "plotsDirectory": "plots",
+    "backupsDirectory": "backups"
+}

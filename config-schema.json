@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "heda config",
+  "description": "Paths to user defined files and directories for heda (Human Editable Data Assistant)",
+  "type": "object",
+  "required": [
+    "backupsDirectory",
+    "dataJson",
+    "plotsDirectory",
+    "schemaJson",
+    "scriptsRhai",
+    "typeRs"
+  ],
+  "properties": {
+    "backupsDirectory": {
+      "description": "Path to a directory to store copies of the data before a migration is run.",
+      "type": "string"
+    },
+    "dataJson": {
+      "description": "Path to the file containing the data as a JSON array.",
+      "type": "string"
+    },
+    "plotsDirectory": {
+      "description": "Path to a directory to store outputs of plots.",
+      "type": "string"
+    },
+    "schemaJson": {
+      "description": "Path to the JSON Schema file for the data. File contents are managed automatically.",
+      "type": "string"
+    },
+    "scriptsRhai": {
+      "description": "Path to the .rhai file containing the rhai scripts for derivation, sorting, plotting, and migration.",
+      "type": "string"
+    },
+    "typeRs": {
+      "description": "Path to the .rs file containing the struct typing an individual item in the JSON array.",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
